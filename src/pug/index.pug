@@ -1,10 +1,18 @@
 html(lang="en")
+    include includes/setup/mixin
     head
         include includes/setup/head
 
-    body
+    body.page 
+        header.page__header.header
+            include includes/header
+            
 
-        include includes/sample-include
+        main.page__main.main
+            include includes/about   
+
+        footer.page__footer.footer    
+            include includes/footer 
 
         img(src='./assets/img/gulp-logo.png')
 

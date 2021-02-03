@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header class="body__header header">
+    <div class="header__box">
+      <p class="header__logo">
+        NELLI.web
+      </p>
+      <a class="header__order-btn" href="order.html">
+        Заказать проект
+      </a>
+    </div>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Обо мне</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">Портфолио</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="contact.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="bodu__main portfolio">
+    <h1 class="portfolie__title visually-hidden">Мои проекты</h1>
+    <ul class="portfolio__list">
+      <li class="portfoli__item project active">
+        <h2 class="project__title">Foundry</h2>
+        <p class="project__about">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <a class="project__link" href="project.html">Подробнее</a>
+      </li>
+      <li class="portfoli__item project">
+        <h2 class="project__title">Hyfa</h2>
+        <p class="project__about">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <a class="project__link" href="project.html">Подробнее</a>
+      </li>
+      <li class="portfoli__item project">
+        <h2 class="project__title">Nike</h2>
+        <p class="project__about">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <a class="project__link" href="project.html">Подробнее</a>
+      </li>
+    </ul>
+    <div class="portfolio__count count">
+      <span class="count__current">01</span>
+      <span class="count__max">07</span>
+    </div>
+    <button class="portfolio__previous" aria-label="Предыдущие проекты">
+      <svg class="portfolio__previous-svg" width="75" height="10" viewBox="0 0 75 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M73.8209 5.82812C74.0615 5.58751 74.0615 5.1974 73.8209 4.95679L69.8999 1.0358C69.6593 0.795193 69.2692 0.795193 69.0285 1.0358C68.7879 1.27642 68.7879 1.66652 69.0285 1.90713L72.5139 5.39246L69.0285 8.87778C68.7879 9.11839 68.7879 9.5085 69.0285 9.74911C69.2692 9.98972 69.6593 9.98972 69.8999 9.74911L73.8209 5.82812ZM0.682617 6.00858H73.3852V4.77633H0.682617V6.00858Z" fill="white"/>
+        </svg>
+    </button>
+    <button class="portfolio__next" aria-label="Предыдущие проекты">
+      <svg class="portfolio__next-svg" width="75" height="10" viewBox="0 0 75 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M73.8209 5.82812C74.0615 5.58751 74.0615 5.1974 73.8209 4.95679L69.8999 1.0358C69.6593 0.795193 69.2692 0.795193 69.0285 1.0358C68.7879 1.27642 68.7879 1.66652 69.0285 1.90713L72.5139 5.39246L69.0285 8.87778C68.7879 9.11839 68.7879 9.5085 69.0285 9.74911C69.2692 9.98972 69.6593 9.98972 69.8999 9.74911L73.8209 5.82812ZM0.682617 6.00858H73.3852V4.77633H0.682617V6.00858Z" fill="white"/>
+        </svg>
+    </button>
+
+  </main>
+
+  <footer class="body__footer footer">
+    <section class="footer__social social">
+      <h2 class="social__title visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="" aria-label="Резюме">
+            <svg class="social__svg" width="43" height="36" viewBox="0 0 43 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="41" height="34" rx="2" stroke="white" stroke-width="1.5"/>
+              <path d="M14.032 26.12C12.384 26.12 10.896 25.752 9.568 25.016C8.256 24.28 7.216 23.264 6.448 21.968C5.696 20.672 5.32 19.216 5.32 17.6C5.32 15.984 5.696 14.528 6.448 13.232C7.216 11.936 8.256 10.92 9.568 10.184C10.896 9.448 12.384 9.08 14.032 9.08C15.248 9.08 16.368 9.28 17.392 9.68C18.416 10.064 19.288 10.64 20.008 11.408L19.24 12.2C17.896 10.872 16.176 10.208 14.08 10.208C12.672 10.208 11.392 10.528 10.24 11.168C9.088 11.808 8.184 12.696 7.528 13.832C6.872 14.952 6.544 16.208 6.544 17.6C6.544 18.992 6.872 20.256 7.528 21.392C8.184 22.512 9.088 23.392 10.24 24.032C11.392 24.672 12.672 24.992 14.08 24.992C16.16 24.992 17.88 24.32 19.24 22.976L20.008 23.768C19.288 24.536 18.408 25.12 17.368 25.52C16.344 25.92 15.232 26.12 14.032 26.12ZM37.3128 9.2L29.8248 26H28.6008L21.1128 9.2H22.4568L29.2488 24.416L36.0408 9.2H37.3128Z" fill="white"/>
+              </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="" aria-label="Резюме">
+            <svg class="social__svg" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5161 1C9.7564 1 1 9.7013 1 20.4651C1 29.0698 6.58988 36.3531 14.3446 38.9312C15.314 39.1246 15.6694 38.5123 15.6694 37.9966C15.6694 37.5455 15.6371 35.9986 15.6371 34.3872C10.2088 35.5796 9.07786 32.0991 9.07786 32.0991C8.20545 29.8432 6.91299 29.2631 6.91299 29.2631C5.13586 28.0707 7.04224 28.0707 7.04224 28.0707C9.01324 28.1996 10.0472 30.0688 10.0472 30.0688C11.792 33.0337 14.6031 32.1958 15.734 31.6801C15.8956 30.4233 16.4126 29.5532 16.9619 29.0698C12.6321 28.5863 8.07621 26.9105 8.07621 19.4661C8.07621 17.3391 8.85168 15.5988 10.0795 14.2453C9.88565 13.7619 9.20711 11.7638 10.2734 9.08899C10.2734 9.08899 11.9213 8.57335 15.6371 11.0871C17.188 10.6681 18.8682 10.4425 20.5161 10.4425C22.164 10.4425 23.8442 10.6681 25.3951 11.0871C29.111 8.57335 30.7588 9.08899 30.7588 9.08899C31.8251 11.7638 31.1466 13.7619 30.9527 14.2453C32.2129 15.5988 32.956 17.3391 32.956 19.4661C32.956 26.9428 28.4001 28.5863 24.0381 29.0698C24.7489 29.6821 25.3628 30.8422 25.3628 32.6792C25.3628 35.2896 25.3305 37.3843 25.3305 38.0289C25.3305 38.5445 25.6859 39.1568 26.6553 38.9635C34.41 36.3853 39.9999 29.102 39.9999 20.4974C40.0322 9.7013 31.2758 1 20.5161 1Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+              </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="" aria-label="Резюме">
+            <svg class="social__svg" width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.75 13.75V27.35M27.25 27.35V20.55C27.25 17.2639 24.5077 14.6 21.125 14.6C17.7423 14.6 15 17.2639 15 20.55V27.35V13.75M8.875 9.5H10.625M2.75 1H34.25C35.2165 1 36 1.76112 36 2.7V33.3C36 34.2389 35.2165 35 34.25 35H2.75C1.7835 35 1 34.2389 1 33.3V2.7C1 1.76112 1.7835 1 2.75 1Z" stroke="white" stroke-width="1.5"/>
+              </svg>
+
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer__lang lang">
+      <h2 class="social__title visually-hidden">Выбор языка</h2>
+      <ul class="lang__list">
+        <li class="lang__item">
+          <a class="lang__link" href="">Rus</a>
+        </li>
+        <li class="lang__item">
+          <a class="lang__link" href="index-en.html">Eng</a>
+        </li>
+        <li class="lang__item">
+          <a class="lang__link" href="index-pl.html">Rus</a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+
+  <section class="body__order order none">
+    <form class="order__form" method="POST" action="">
+      <ul class="order__list">
+        <li class="order__item">
+          <label class="order__label" for="name">Имя</label>
+          <input class="order__input" type="text" id="name" name="name" required>
+        </li>
+        <li class="order__item">
+          <label class="order__label" for="surname">Фамилия</label>
+          <input class="order__input" type="text" id="surname" name="name" required>
+        </li>
+        <li class="order__item">
+          <label class="order__label" for="email">E-mail</label>
+          <input class="order__input" type="email" id="email" name="name" pattern=".+@globex.com" placeholder="pochta@gmail.com"
+          required>
+        </li>
+        <li class="order__item">
+          <label class="order__label" for="phone">Телефон</label>
+          <input class="order__input" type="tel" id="phone" name="name" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 123 456 78 90"
+          required>
+        </li>
+        <li class="order__item">
+          <label class="order__label" for="messege">Сообщение</label>
+          <textarea class="order__massege" id="messege" name="messege" rows="10" required></textarea>
+        </li>
+      </ul>
+    </form>
+  </section>
+
+</body>
+</html>

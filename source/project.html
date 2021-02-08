@@ -21,7 +21,7 @@
           <a class="nav__link" href="index.html">Обо мне</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="">Портфолио</a>
+          <a class="nav__link" href="portfolio.html">Портфолио</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="contact.html">Контакты</a>
@@ -30,45 +30,48 @@
     </nav>
   </header>
 
-  <main class="body__main portfolio">
-    <h1 class="portfolie__title visually-hidden">Мои проекты</h1>
-    <ul class="portfolio__list">
-      <li class="portfoli__item project active">
-        <h2 class="project__title">Foundry</h2>
-        <p class="project__about">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <a class="project__link" href="project.html">Подробнее</a>
-      </li>
-      <li class="portfoli__item project">
-        <h2 class="project__title">Hyfa</h2>
-        <p class="project__about">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <a class="project__link" href="project.html">Подробнее</a>
-      </li>
-      <li class="portfoli__item project">
-        <h2 class="project__title">Nike</h2>
-        <p class="project__about">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <a class="project__link" href="project.html">Подробнее</a>
-      </li>
-    </ul>
-    <div class="portfolio__count count">
-      <span class="count__current">01</span>
-      <span class="count__max">07</span>
+  <main class="body__main project">
+    <a class="project__back" href="portfolio.html">
+      Назад
+    </a>
+    <h1 class="project__title">Foundry</h1>
+    <p class="project__content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <div class="project__img-box">
+      <img class="project__img" src="../img/ex_portfolio.png" width="579" alt="фото проекта">
     </div>
-    <button class="portfolio__previous" aria-label="Предыдущие проекты">
-      <svg class="portfolio__previous-svg" width="75" height="10" viewBox="0 0 75 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M73.8209 5.82812C74.0615 5.58751 74.0615 5.1974 73.8209 4.95679L69.8999 1.0358C69.6593 0.795193 69.2692 0.795193 69.0285 1.0358C68.7879 1.27642 68.7879 1.66652 69.0285 1.90713L72.5139 5.39246L69.0285 8.87778C68.7879 9.11839 68.7879 9.5085 69.0285 9.74911C69.2692 9.98972 69.6593 9.98972 69.8999 9.74911L73.8209 5.82812ZM0.682617 6.00858H73.3852V4.77633H0.682617V6.00858Z" fill="white"/>
-        </svg>
-    </button>
-    <button class="portfolio__next" aria-label="Предыдущие проекты">
-      <svg class="portfolio__next-svg" width="75" height="10" viewBox="0 0 75 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M73.8209 5.82812C74.0615 5.58751 74.0615 5.1974 73.8209 4.95679L69.8999 1.0358C69.6593 0.795193 69.2692 0.795193 69.0285 1.0358C68.7879 1.27642 68.7879 1.66652 69.0285 1.90713L72.5139 5.39246L69.0285 8.87778C68.7879 9.11839 68.7879 9.5085 69.0285 9.74911C69.2692 9.98972 69.6593 9.98972 69.8999 9.74911L73.8209 5.82812ZM0.682617 6.00858H73.3852V4.77633H0.682617V6.00858Z" fill="white"/>
-        </svg>
-    </button>
+    <p class="project__content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <div class="project__img-box">
+      <img class="project__img" src="../img/ex_portfolio.png" width="579" alt="фото проекта">
+    </div>
+    <div class="project__full full">
+      <a class="full__link" href="">
+        Посмотреть код
+      </a>
+      <a class="full__link" href="">
+        Перейти на сайт
+      </a>
+    </div>
+    <div class="project__next-box">
+      <button class="project__next" type="button">Следующий проект</button>
+    </div>
+
+    <section class="project__other other">
+      <h1 class="other__title">Другие проекты</h1>
+      <ul class="other__list">
+        <li class="other__item">
+          <img class="other__img" src="../img/other-ex.png" width="405" alt="фото проекта">
+          <h3 class="other__title">Hyfa</h3>
+        </li>
+        <li class="other__item">
+          <img class="other__img" src="../img/other-ex.png" width="405" alt="фото проекта">
+          <h3 class="other__title">Hyfa</h3>
+        </li>
+      </ul>
+    </section>
 
   </main>
 

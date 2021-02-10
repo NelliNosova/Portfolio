@@ -1,0 +1,118 @@
+.contact {
+  @media (min-width: $min-desktop) {
+    width: 70%;
+    max-width: 1040px;
+    margin: auto;
+  }
+}
+
+.contact__title {
+  @include zero;
+  width: 70%;
+  margin: auto;
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: $basic-accent;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 100px;
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 100%;
+    margin-top: 160px;
+    font-size: 48px;
+    line-height: 59px;
+  }
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  margin-top: 60px;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 100px;
+  }
+
+  @media (min-width: $min-desktop) {
+    display: grid;
+    grid-template-areas:
+      "at bt"
+      "ad bd"
+      "ct ."
+      "cd .";
+    width: 100%;
+    margin-top: 160px;
+  }
+
+  & * {
+    @include zero;
+  }
+}
+
+.contact__item {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba($basic-white, 0.4);
+
+  @media (min-width: $min-desktop) {
+    &--at {
+      grid-area: at;
+    }
+
+    &--bt {
+      grid-area: bt;
+    }
+
+    &--ct {
+      grid-area: ct;
+    }
+  }
+}
+
+.contact__mean {
+  margin-bottom: 30px;
+
+  @media (min-width: $min-desktop) {
+    &--ad {
+      grid-area: ad;
+    }
+
+    &--bd {
+      grid-area: bd;
+    }
+
+    &--cd {
+      grid-area: cd;
+    }
+  }
+
+  & a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: $basic-white;
+
+    @media (min-width: $min-tablet) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $min-desktop) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+}

@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>NELLI.web</title>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-300.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-500.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-600.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font" crossorigin>
+
+  <link href="css/style.min.css" rel="stylesheet" />
 </head>
-<body>
+<body class="body body--contact">
   <header class="body__header header">
     <div class="header__box">
       <p class="header__logo">
@@ -16,7 +23,7 @@
       </a>
     </div>
     <nav class="header__nav nav">
-      <ul class="nav__list">
+      <ul class="nav__list list">
         <li class="nav__item">
           <a class="nav__link" href="index.html">Обо мне</a>
         </li>
@@ -32,32 +39,32 @@
 
   <main class="body__main contact">
     <h1 class="contact__title">Контакты</h1>
-    <dl class="contact__list">
-      <dt class="contact__item">
+    <dl class="contact__list list">
+      <dt class="contact__item contact__item--at">
         E-mail
-        <dd class="contact__mean">
-          <a class="contact__link" href="malto:nelli0401@gmail.com">nelli0401@gmail.com</a>
-        </dd>
       </dt>
-      <dt class="contact__item">
+      <dd class="contact__mean contact__mean--ad">
+        <a class="contact__link" href="malto:nelli0401@gmail.com">nelli0401@gmail.com</a>
+      </dd>
+      <dt class="contact__item contact__item--bt">
         Телефон
-        <dd class="contact__mean">
-          <a class="contact__link" href="tel:+48 796-991-348">+48 796-991-348</a>
-        </dd>
       </dt>
-      <dt class="contact__item">
+      <dd class="contact__mean contact__mean--bd">
+        <a class="contact__link" href="tel:+48 796-991-348">+48 796-991-348</a>
+      </dd>
+      <dt class="contact__item contact__item--ct">
         Телеграм
-        <dd class="contact__mean">
-          <a href="tg://resolve?domain=NelliNosova">@NelliNosova</a>
-        </dd>
       </dt>
+      <dd class="contact__mean contact__mean--cd">
+        <a href="tg://resolve?domain=NelliNosova">@NelliNosova</a>
+      </dd>
     </dl>
   </main>
 
   <footer class="body__footer footer">
     <section class="footer__social social">
       <h2 class="social__title visually-hidden">Социальные сети</h2>
-      <ul class="social__list">
+      <ul class="social__list list">
         <li class="social__item">
           <a class="social__link" href="" aria-label="Резюме">
             <svg class="social__svg" width="43" height="36" viewBox="0 0 43 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +92,7 @@
     </section>
     <section class="footer__lang lang">
       <h2 class="social__title visually-hidden">Выбор языка</h2>
-      <ul class="lang__list">
+      <ul class="lang__list list">
         <li class="lang__item">
           <a class="lang__link" href="">Rus</a>
         </li>
@@ -101,7 +108,7 @@
 
   <section class="body__order order none">
     <form class="order__form" method="POST" action="">
-      <ul class="order__list">
+      <ul class="order__list list">
         <li class="order__item">
           <label class="order__label" for="name">Имя</label>
           <input class="order__input" type="text" id="name" name="name" required>
@@ -121,8 +128,8 @@
           required>
         </li>
         <li class="order__item">
-          <label class="order__label" for="messege">Сообщение</label>
-          <textarea class="order__massege" id="messege" name="messege" rows="10" required></textarea>
+          <label class="order__label" for="message">Сообщение</label>
+          <textarea class="order__massege" id="message" name="message" rows="10" required></textarea>
         </li>
       </ul>
     </form>

@@ -1,5 +1,6 @@
 .lang {
   position: relative;
+
   @media (min-width: $min-tablet) {
     margin-left: auto;
   }
@@ -18,5 +19,4 @@
   text-transform: uppercase;
   color: rgba($color: $basic-white, $alpha: 0.42);
   text-decoration: none;
-
 }

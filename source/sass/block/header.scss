@@ -10,6 +10,14 @@
 }
 
 .header__nav {
+  display: none;
+
+  @media (min-width: $min-tablet) {
+
+    display: flex;
+    align-items: baseline;
+  }
+
   @media (min-width: $min-desktop) {
     position: fixed;
     bottom: 210px;
@@ -55,16 +63,4 @@
     font-size: 22px;
     line-height: 27px;
   }
-}
-
-.header__nav {
-  display: none;
-
-  @media (min-width: $min-tablet) {
-
-    display: flex;
-    align-items: baseline;
-  }
-
-
 }

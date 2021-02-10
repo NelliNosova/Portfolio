@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NELLI.web</title>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-300.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-500.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-600.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font" crossorigin>
+
+  <link href="css/style.min.css" rel="stylesheet" />
 </head>
 <body class="body">
   <header class="body__header header">
@@ -16,7 +23,7 @@
       </a>
     </div>
     <nav class="header__nav nav">
-      <ul class="nav__list">
+      <ul class="nav__list list">
         <li class="nav__item">
           <a class="nav__link" href="">Обо мне</a>
         </li>
@@ -31,18 +38,27 @@
   </header>
 
   <main class="body__about about">
-    <h1 class="about__title">NELLI</h1>
-    <h2 class="about__sub-title">Web Developer</h2>
-    <p class="about__content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <img class="about__img" src="img/nelli.jpg" width="663">
+    <div class="about__box">
+      <h1 class="about__title">Nelli Nosova</h1>
+      <h2 class="about__sub-title">Web Developer</h2>
+      <p class="about__content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <picture class="product__img-area">
+      <!-- <source type="image/webp" media="(min-width: 1150px)"  srcset="img/nelli_desktop.webp 1x"> -->
+      <source type="image/webp" media="(min-width: 768px)"  srcset="img/nelli_tablet.webp 1x">
+      <source type="image/webp" srcset="img/nelli_mobile.webp 1x">
+      <!-- <source media="(min-width: 1150px)"  srcset="img/nelli_desktop.jpg 1x"> -->
+      <source media="(min-width: 768px)"  srcset="img/nelli_tablet.jpg 1x">
+      <img class="about__img" src="img/nelli_mobile.jpg" width="663" alt="Мое фото">
+    </picture>
   </main>
 
   <footer class="body__footer footer">
     <section class="footer__social social">
       <h2 class="social__title visually-hidden">Социальные сети</h2>
-      <ul class="social__list">
+      <ul class="social__list list">
         <li class="social__item">
           <a class="social__link" href="" aria-label="Резюме">
             <svg class="social__svg" width="43" height="36" viewBox="0 0 43 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +86,7 @@
     </section>
     <section class="footer__lang lang">
       <h2 class="social__title visually-hidden">Выбор языка</h2>
-      <ul class="lang__list">
+      <ul class="lang__list list">
         <li class="lang__item">
           <a class="lang__link" href="">Rus</a>
         </li>

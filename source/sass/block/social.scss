@@ -1,0 +1,17 @@
+.social {
+  @media (min-width: $min-tablet) {
+    position: absolute;
+    top: 55px;
+    right: 30px;
+  }
+  @media (min-width: $min-desktop) {
+    right: 60px;
+  }
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 140px;
+  max-width: 160px;
+}

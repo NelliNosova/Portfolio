@@ -1,0 +1,31 @@
+.body {
+  @include padding (20px);
+  position: relative;
+  min-height: 100%;
+  min-width: $min-phone;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  background-image: url('../img/bg_about.svg');
+  background-color: $basic-dark;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  color: $basic-grey;
+
+  @media (min-width: $min-tablet) {
+    @include padding (40px);
+    background-position: top right;
+  }
+
+  @media (min-width: $min-desktop) {
+    @include padding (60px);
+  }
+}
+
+.body__about {
+  margin-top: 30px;
+}
+
+.body__footer {
+  margin-top: 30px;
+}

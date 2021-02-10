@@ -1,0 +1,21 @@
+.nav {
+  @media (min-width: $min-desktop) {
+    width: 400px;
+  }
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.nav__link {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: rgba($basic-white, 0.4);
+  text-decoration: none;
+}

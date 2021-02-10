@@ -1,0 +1,22 @@
+.lang {
+  position: relative;
+  @media (min-width: $min-tablet) {
+    margin-left: auto;
+  }
+}
+
+.lang__list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 120px;
+  max-width: 160px;
+}
+
+.lang__link {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba($color: $basic-white, $alpha: 0.42);
+  text-decoration: none;
+
+}

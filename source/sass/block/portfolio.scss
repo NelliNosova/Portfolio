@@ -1,0 +1,67 @@
+.portfolio {
+  position: relative;
+
+  @media (min-width: $min-desktop) {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: -60px;
+  }
+}
+
+.portfolio__list {
+  @media (min-width: $min-desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
+
+.portfolio__item {
+  margin-top: 40px;
+
+  @media (min-width: $min-desktop) {
+    margin-right: 36px;
+  }
+}
+
+.portfolio__count {
+  display: none;
+  margin-top: 20px;
+
+  @media (min-width: $min-desktop) {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 51%;
+  }
+}
+
+.portfolio__arrow-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+
+  @media (min-width: $min-desktop) {
+    position: absolute;
+    top: 65%;
+    left: 67%;
+  }
+}
+
+.portfolio__previous,
+.portfolio__next {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.portfolio__previous {
+  // display: none;
+  transform: rotate(-180deg);
+}
+
+.portfolio__next {
+  display: block;
+}

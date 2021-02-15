@@ -63,10 +63,24 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $basic-accent;
+  }
+
+  &:active path {
+    opacity: 0.4;
+  }
 }
 
 .portfolio__previous {
-  // display: none;
+  display: none;
   transform: rotate(-180deg);
 }
 

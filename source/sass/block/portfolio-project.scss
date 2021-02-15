@@ -92,6 +92,16 @@
     font-size: 22px;
     line-height: 27px;
   }
+
+  &:hover,
+  &:focus {
+    text-decoration-color: $basic-accent;
+  }
+
+  &:active {
+    color: $basic-accent;
+    opacity: 0.4;
+  }
 }
 
 .portfolio-project__box {

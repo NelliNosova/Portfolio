@@ -23,6 +23,20 @@
   @media (min-width: $min-desktop) {
     margin-top: 55px;
   }
+
+  &:hover,
+  &:focus {
+    color: $basic-accent;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $basic-accent;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .project__previous-svg {
@@ -109,6 +123,22 @@
 
   @media (min-width: $min-desktop) {
     margin-top: 55px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration-color: $basic-accent;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $basic-accent;
+  }
+
+  &:active {
+    color: $basic-accent;
+    opacity: 0.4;
   }
 }
 

@@ -8,10 +8,20 @@
 .full__link {
   box-sizing: border-box;
   padding: 11px;
-  // width: 45%;
   border: 2px solid $basic-grey;
   border-radius: 53px;
   text-align: center;
   text-decoration: none;
   color: $basic-grey;
+  transition-duration: 0.5s;
+
+  &:hover,
+  &:focus {
+    color: $basic-accent;
+    border-color: $basic-accent;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }

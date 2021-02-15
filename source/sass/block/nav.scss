@@ -13,9 +13,44 @@
 }
 
 .nav__link {
+  position: relative;
   font-weight: normal;
   font-size: 20px;
   line-height: 27px;
   color: rgba($basic-white, 0.4);
   text-decoration: none;
+  transition-duration: 0.5s;
+
+  &--active {
+    color: $basic-accent;
+  }
+
+  &--active::before {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 49%;
+    height: 20px;
+    width: 3px;
+    background-color: $basic-accent;
+    transition-duration: 0.5s;
+
+    @media (min-width: $min-desktop) {
+      top: -40px;
+      left: 30%;
+      height: 3px;
+      width: 50px;
+      transform: rotate(90deg);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $basic-white;
+  }
+
+  &:active {
+    color: $basic-accent;
+    opacity: 0.4;
+  }
 }

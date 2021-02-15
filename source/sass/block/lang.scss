@@ -19,4 +19,18 @@
   text-transform: uppercase;
   color: rgba($color: $basic-white, $alpha: 0.42);
   text-decoration: none;
+  transition-duration: 0.5s;
+
+  &:hover,
+  &:focus {
+    color: $basic-white;
+  }
+
+  &:active {
+    color: rgba($basic-accent, 0.4);
+  }
+
+  &--active {
+    color: $basic-accent;
+  }
 }

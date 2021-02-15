@@ -116,3 +116,15 @@
     }
   }
 }
+
+.contact__link {
+  &:hover,
+  &:focus {
+    text-decoration-color: $basic-accent;
+  }
+
+  &:active {
+    color: $basic-accent;
+    opacity: 0.4;
+  }
+}

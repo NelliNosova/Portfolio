@@ -53,6 +53,7 @@
   text-decoration-line: underline;
   text-align: right;
   color: $basic-white;
+  transition-duration: 0.5s;
 
   @media (min-width: $min-tablet) {
     margin-left: 40px;
@@ -62,5 +63,15 @@
     margin-left: 60px;
     font-size: 22px;
     line-height: 27px;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration-color: $basic-accent;
+  }
+
+  &:active {
+    color: $basic-accent;
+    opacity: 0.4;
   }
 }

@@ -1,0 +1,52 @@
+.other {
+  position: relative;
+}
+
+.other__title {
+  @include zero;
+  margin-top: 20px;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-top: 55px;
+  }
+}
+
+.other__list {
+  margin-top: 20px;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-top: 55px;
+  }
+
+  @media (min-width: $min-tablet) {
+    display: flex;
+  }
+}
+
+.other__item {
+  margin-bottom: 50px;
+  @media (min-width: $min-tablet) {
+    margin-right: 20px;
+  }
+}
+
+.other__project-title {
+  @include zero;
+  margin-top: 15px;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-top: 30px;
+  }
+}

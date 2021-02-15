@@ -1,0 +1,17 @@
+.full {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+}
+
+.full__link {
+  box-sizing: border-box;
+  padding: 11px;
+  // width: 45%;
+  border: 2px solid $basic-grey;
+  border-radius: 53px;
+  text-align: center;
+  text-decoration: none;
+  color: $basic-grey;
+}

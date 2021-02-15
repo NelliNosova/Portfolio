@@ -14,6 +14,12 @@
     }
 
     @media (min-width: $min-desktop) {
+      & .portfolio-project__img {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: $min-desktop) {
       width: 51%;
       flex-grow: 2;
 
@@ -32,6 +38,12 @@
     @media (min-width: $min-desktop) {
       margin-right: -10%;
     }
+  }
+}
+
+.portfolio-project__img {
+  @media (min-width: $min-desktop) {
+    width: 100%;
   }
 }
 

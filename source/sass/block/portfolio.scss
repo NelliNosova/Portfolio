@@ -36,6 +36,10 @@
     top: 60%;
     left: 51%;
   }
+
+  @media (min-width: 1700px) {
+    top: 65%;
+  }
 }
 
 .portfolio__arrow-box {
@@ -47,6 +51,10 @@
     position: absolute;
     top: 65%;
     left: 67%;
+  }
+
+  @media (min-width: 1700px) {
+    top: 70%;
   }
 }
 
